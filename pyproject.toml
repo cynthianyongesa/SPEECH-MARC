@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speechmarc"
+version = "0.1.0"
+description = "SPEECH-MARC: Python package for speech-based assessment of Mild Cognitive Impairment"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Cynthia Nyongesa" }]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "scipy",
+  "joblib",
+  "tqdm",
+  "librosa",
+  "soundfile",
+  "opensmile",
+  "sentence-transformers",
+  "torch",
+  "xgboost",
+  "catboost",
+  "shap",
+  "textstat",
+  "regex"
+]
+
+[project.urls]
+Homepage = "https://github.com/cynthianyongesa/SPEECH-MARC"
+
+[project.scripts]
+speechmarc-demo = "speechmarc.cli:demo"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
