@@ -36,6 +36,10 @@ Homepage = "https://github.com/cynthianyongesa/SPEECH-MARC"
 
 [project.scripts]
 speechmarc-demo = "speechmarc.cli:demo"
+speechmarc-residualize = "speechmarc.cli:residualize_cmd"
+speechmarc-select      = "speechmarc.cli:select_cmd"
+speechmarc-eval        = "speechmarc.cli:eval_cmd"
+
 
 [tool.setuptools.package-dir]
 "" = "src"
