@@ -9,6 +9,8 @@ then merge them with participant demographics.
 ### Requirements
 - [ffmpeg](https://ffmpeg.org/download.html) must be installed and accessible in your system PATH
   (needed for audio duration extraction).
+- [spacy] (https://github.com/explosion/spaCy) must be installed for nlp.
+- [opensmile] (https://audeering.github.io/opensmile/get-started.html)
 - Python dependencies are handled automatically when you install the package.
 
 ### Example usage
