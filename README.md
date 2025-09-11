@@ -38,3 +38,9 @@ merged = merge_transcripts_with_demographics(
     demographics_csv=Path("path/to/demographics.csv"),
     out_merged_csv=Path("outputs/merged_cookie_transcripts.csv"),
 )
+
+### Notes
+- You must have **ffmpeg** installed for `mediainfo` to return audio durations.
+- If participant IDs are not the first 6 characters of the filename, adjust `filename_id_len`.
+- If filenames vary (e.g., `VR0123 Cookie Theft 2024.wav`), the prefix extraction 
+  still works since only the first 6 characters are used.
