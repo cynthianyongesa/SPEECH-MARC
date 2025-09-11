@@ -23,7 +23,7 @@ An open-source pipeline for extracting **linguistic** and **acoustic** speech fe
 
 ---
 
-## Features
+## Multimodal Features
 - **Preprocessing**: transcript generation (Whisper) and demographics merge; audio duration via ffmpeg.
 - **Feature Extraction**  
   - *Linguistic*: readability, POS rates, disfluency, deixis, ICU/AOI flags.  
