@@ -28,7 +28,8 @@ dependencies = [
   "catboost",
   "shap",
   "textstat",
-  "regex"
+  "regex", 
+  "click"
 ]
 
 [project.urls]
