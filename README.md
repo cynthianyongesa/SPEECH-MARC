@@ -44,3 +44,29 @@ merged = merge_transcripts_with_demographics(
 - If participant IDs are not the first 6 characters of the filename, adjust `filename_id_len`.
 - If filenames vary (e.g., `VR0123 Cookie Theft 2024.wav`), the prefix extraction 
   still works since only the first 6 characters are used.
+
+## 2. Feature Extraction
+
+SPEECH-MARC supports three types of feature extraction:
+
+1. **Linguistic + ICU/AOI features** from transcript text  
+2. **Acoustic eGeMAPS features** directly from WAV files using the Python API  
+3. **Acoustic eGeMAPS features** from openSMILE CLI batch CSVs  
+
+### Examples
+
+```python
+# 1) Linguistic + ICU/AOI from a transcript string
+from speechmarc.features import build_text_feature_row
+
+text = "The boy is reaching for the cookie jar while the sink is overflowing with water."
+row = build_text_feature_row(text)  # pandas Series
+print(row.head())
+
+# 2) Acoustic eGeMAPS for a WAV file (Python API)
+from speechmarc.features import extract_acoustic_egeMAPS
+df_acoustic = extract_acoustic_egeMAPS("path/to/audio.wav")  # 1-row DataFrame
+
+# 3) Acoustic eGeMAPS if you used openSMILE CLI (batch CSVs)
+from speechmarc.features import combine_opensmile_cli_dir
+smile_df = combine_opensmile_cli_dir("path/to/smile_output_dir")  # many rows
