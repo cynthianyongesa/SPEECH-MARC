@@ -4,7 +4,7 @@
 **Speech-based Multimodal Assessment of Risk for Cognition**
 
 <div align="center">
-  <img src="assets/SPEECH-MARC-banner.png" alt="SPEECH-MARC Banner" width="600"/>
+  <img src="assets/SPEECH-MARC-banner1.png" alt="SPEECH-MARC Banner" width="600"/>
 </div>
 
 An open-source pipeline for extracting **linguistic** and **acoustic** speech features, residualizing covariates, performing transparent feature selection, and evaluating baseline models for **MoCA-defined MCI** classification.
