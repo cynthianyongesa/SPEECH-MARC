@@ -1,3 +1,5 @@
+![CI](https://github.com/cynthianyongesa/SPEECH-MARC/actions/workflows/python-package.yml/badge.svg)
+
 <div align="center">
 
 # SPEECH-MARC  
