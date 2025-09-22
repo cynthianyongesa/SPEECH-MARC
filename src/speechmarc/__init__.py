@@ -7,9 +7,9 @@ to detect Mild Cognitive Impairment (MCI).
 """
 
 __version__ = "0.1.0"
-__all__ = ["preprocessing", "features", "residualize", "models", "evaluate"]
+__all__ = ["preprocessing", "features", "residualize", "feature_select", "evaluate"]
 
-from . import preprocessing, features, residualize, models, evaluate
+from . import preprocessing, features, residualize, feature_select, evaluate
 
 __author__ = "Cynthia Nyongesa"
 __license__ = "MIT"
